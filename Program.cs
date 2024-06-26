@@ -26,7 +26,7 @@ public static class Program
             TransportType = ServiceBusTransportType.AmqpWebSockets
         };
 
-        client = new ServiceBusClient("servicebus.authorization.dev", new DefaultAzureCredential(), clientOptions);
+        client = new ServiceBusClient("altinnauthpoc.privatelink.servicebus.windows.net", new DefaultAzureCredential(), clientOptions);
         sender = client.CreateSender("test");
 
         // create a batch 
